@@ -1,0 +1,1001 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat:wght@300&family=Unica+One&family=Vollkorn&display=swap');
+/*font-family: 'Unica One', cursive;*/
+/*font-family: 'Vollkorn', serif;*/
+/*font-family: 'Karla', sans-serif;*/
+/*font-family: 'Montserrat', sans-serif;*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*home pg*/
+
+header {
+    display: flex;
+    width: auto;
+    height: auto;
+    font-family: 'Unica One', cursive;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    border-bottom: 5px solid #DEF449;
+    padding-top: 10px;
+    text-decoration: none;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+img.search-logo {
+    display: none;
+}
+nav {
+    width: 100%;
+    height: 60px;
+    font-family: 'Unica One', cursive;
+    text-align: center;
+    padding: 5px;
+    /*    background-color: rgba(255,255,255,0.90);*/
+    border-bottom: 5px solid #DEF449;
+}
+.drpBtn {
+    border-radius: 5px;
+}
+.nav-flex {
+    display: none;
+}
+
+.topnav {
+/*  	background-color: #006341;*/
+/*  	text-align: center; */
+    z-index: 100;
+}
+.inner {
+    display: none;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.inner.show {
+    display: block;
+    z-index: 100;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    padding: 15px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p, dl {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+}
+a {
+    color: black;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h1,
+h2 {
+/*    text-decoration: underline;*/
+    font-family: 'Unica One', cursive;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-family: 'Unica One', cursive;
+    font-size: 1.4em;
+
+}
+.sloganHome {
+    grid-column: 1/span 12;
+    grid-row: 2;
+    text-align: center;
+    text-decoration-line: line-through;
+    font-size: 1.8em;
+    opacity: 0.35;
+    background-color: white;
+    padding: 15px;
+    
+}
+.slogan {
+    grid-column: 1/span 12;
+    grid-row: 2;
+    text-align: center;
+    text-decoration-line: line-through;
+    font-size: 1.8em;
+    opacity: 0.35;
+    background-color: white;
+    padding: 15px;
+    
+}
+.about-plus {
+    background-color: #bebcba;
+}
+
+.carousel {
+    grid-column: 1/span 12;
+    grid-row: 1/2;
+
+}
+.home-article {
+    grid-column: 1/span 12;
+    grid-row: 2/3;
+    padding: 30px;
+    border-top: 20px solid #def449;
+    font-family: 
+}
+
+.grid2 {
+    grid-column: 2/12;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    padding: 20px;
+}
+.grid2 h2 {
+    grid-column: 1/13;
+    grid-row: 1/2;
+}
+.card {
+    padding: 10px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.card:hover {
+    color: white;
+    background-color: lightgray;
+}
+.card1 {
+    grid-column: 1/13;
+    grid-row: 2/3;
+}
+.card2 {
+    grid-column: 1/13;
+    grid-row: 3/4;
+}
+.card3 {
+    grid-column: 1/13;
+    grid-row: 4/5;
+}
+.card4 {
+    grid-column: 1/13;
+    grid-row: 5/6;
+}
+footer {
+    border-top: 5px solid #def449;
+    text-align: center;
+}
+
+footer .about-plus {
+    padding: 20px;
+}
+
+
+/*about pg*/
+
+.self-image {
+    grid-column: 1/span 12;
+    grid-row: 1;
+
+}
+
+.main-article {
+    grid-column: 1/13;
+    grid-row: 3;
+    padding: 30px;
+    margin: 3px;
+    font-size: 1.1em;
+    background-color: #bebcba;
+    border-top: 20px solid #def449;
+    border-bottom: 20px solid #def449;
+}
+
+.side-article {
+    grid-column: 1/span 12;
+    grid-row: 5/6;
+    font-size: 1.1em;
+    margin: 25px;
+    padding: 30px;
+    margin: 20px;
+    background-color: #bebcba;
+    border-bottom: 5px solid #def449;
+}
+.info {
+    grid-column: 1/span 12;
+    grid-row: 6/7;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    border-bottom: 5px solid #def449;
+}
+.fill-image {
+    grid-column: 1/span 12;
+    grid-row: 4/5;
+    text-align: left;
+}
+
+.services {
+    grid-column: 1/span 12;
+    grid-row: 7/8;
+    text-align: center;
+    border-bottom: 10px solid #def449;
+}
+.socialsAbout {
+    grid-column: 1/span 12;
+    grid-row: 8/10;
+    text-align: center;
+
+}
+
+
+
+
+/*Contact Page */
+
+.cntcUs {
+    margin: auto;
+    grid-column: 1/span 12;
+    grid-row: 1/span 1;
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+}
+.cntcUs h2 {
+    padding: 1em 1em 1em 1em;
+}
+.cntcForm {
+    grid-column: 1/span 12;
+    grid-row: 2/3;
+/*    width: 100%;*/
+}
+.iput {
+/*   size: 100%;*/
+    line-height: 1.5;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+    resize: vertical;
+    background-color: lightgoldenrodyellow;
+    
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    resize: vertical;
+    background-color: white;
+}
+.price-li {
+    grid-column: 1/span 12;
+    grid-row: 3/4;
+    text-align: center;
+    font-size: 2em;
+}
+
+table {
+    grid-column: 1/13;
+    grid-row: 4/5;
+}
+thead th {
+    background-color: #CEC0B5;
+    color: black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.6em;
+}
+th, td {
+    background-color: #CEC0B5;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3em;
+    text-align: left;
+    
+}
+tr {
+    background-color: lightgoldenrodyellow;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.cntExtra {
+    grid-column: 1/span 12;
+    grid-row: 5/6;
+}
+
+/*Portfolio page*/
+
+.portfo{
+/*    padding: 50px 50px 50px 0px;*/
+    margin: auto;
+    grid-column: 1/span 12;
+    grid-row: 1/span 1;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    
+}
+.portfo h2 {
+    padding: 1em 1em 1em 1em;
+    color: black;
+}
+.gallery {
+    width: 100%;
+    grid-column: 1/span 12;
+    grid-row: auto;
+/*    margin-top: 2%;*/
+/*    margin-bottom: 2%;*/
+    text-align: center;
+    justify-items: center;
+}
+
+.courseGal {
+/*    justify-self: center;*/
+    width: 100%;
+    text-align: center;
+/*    background-color: #0666a3*/
+}
+.courseGal img {
+    padding: 5%;
+}
+.portCard {
+    display: inline-block;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 18px;
+    padding: 5px;
+    margin-bottom: 10px;
+/*    background-color: #8ebf42;*/
+}
+.portCard:hover {
+    color: white;
+    background-color: lightgray;
+}
+
+
+
+/*Video page*/
+
+.vidH{
+/*    padding: 50px 50px 50px 0px;*/
+    margin: auto;
+    grid-column: 1/span 12;
+    grid-row: 1/span 1;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    
+}
+.vidH h2 {
+    padding: 1em 1em 1em 1em;
+    color: black;
+}
+.vidList {
+    grid-column: 1/ span 12;
+    grid-row: 2/span 4;
+/*    display: block;*/
+    margin: 0 auto;
+}
+
+.vid1 video {
+    margin: 0 auto;
+    width: 100%;
+/*    text-align: center;*/
+    
+}
+.vidcap1 {
+    padding: 15px;
+}
+.vid2 video{
+    margin: 0 auto;
+    width: 100%;
+}
+.vidcap2 {
+    padding: 15px;
+}
+.vid3 video{
+    margin: 0 auto;
+    width: 100%;
+}
+.vidcap3 {
+    padding: 15px;
+}
+
+/*Pictures page*/
+.photoH {
+/*    padding: 50px 50px 50px 0px;*/
+    margin: auto;
+/*    grid-column: 1/span 12;*/
+/*    grid-row: 1/span 1;*/
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+.photoH h2 {
+    padding: 1em 1em 1em 1em;
+    color: black;
+}
+.piccap1 {
+    grid-column: 1/span 12;
+    grid-row: 2/span 1;
+    font-size: 1.2em;
+    padding: 15px;
+    margin-top: 20px;
+    
+}
+
+/*web dev page*/
+
+.webDevH{
+/*    padding: 50px 50px 50px 0px;*/
+    margin: auto;
+    grid-column: 1/span 12;
+    grid-row: 1/span 1;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    
+}
+.webDevH h2 {
+    padding: 1em 1em 1em 1em;
+    color: black;
+}
+.sect1 {
+    grid-column: 1/span 12;
+    grid-row: 2/span 2;
+    margin-bottom: 50px;
+    
+}
+.ero1 img {
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+.erodescript,
+.cacaudescript,
+.immdescript {
+    padding: 30px;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 0, 0.2);
+    color: black;
+    border-radius: 8px;
+}
+.sect2 {
+    grid-column: 1/span 12;
+    grid-row: 4/span 2;
+    margin-bottom: 50px;
+}
+.cacau1 img {
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+.sect3 {
+    grid-column: 1/span 12;
+    grid-row: 6/span 2;
+    margin-bottom: 50px;
+}
+.imm1 img {
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+/*ux design page*/
+.uxH{
+/*    padding: 50px 50px 50px 0px;*/
+    margin: auto;
+    grid-column: 1/span 12;
+    grid-row: 1/span 1;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    
+}
+.uxH h2 {
+    padding: 1em 1em 1em 1em;
+    color: black;
+}
+
+
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width: 30em) {
+/*    30em=480px */
+    #nav-bar.navfull {
+/*        display: none;*/
+    }
+    
+
+
+}
+
+/*tablet-view*/
+@media only screen and (min-width: 48em) {
+/*    48em=768px */
+    .drpBtn,
+    .inner {
+        display: none;
+    }
+    .nav-flex {
+        display: block;
+        display: contents;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Unica One', cursive;
+        font-size: 2em;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    p,
+    dl {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+    
+    .carousel {
+        width: 80%;
+        grid-column: 3/12;
+        grid-row: 1/2;
+    }
+    .carousel-inner {
+        width: 100%;
+    }
+    .home-article {
+        grid-column: 1/span 12;
+        grid-row: 2/3;
+        font-size: 1.5em;
+    }
+    .plus-services {
+        grid-column: 1/13;
+        grid-row: 3/4;
+        text-align: center;
+    }
+    .card {
+/*        height: 20rem;*/
+        font-size: 1.2em;
+        text-decoration: underline;
+        text-decoration-style: double;
+    }
+    .card1 {
+        grid-column: 2/7;
+        grid-row: 2/3;
+    }
+    .card2 {
+        grid-column: 8/12;
+        grid-row: 2/3;
+    }
+    .card3 {
+        grid-column: 2/7;
+        grid-row: 3/4;
+    }
+    .card4 {
+        grid-column: 8/13;
+        grid-row: 3/4;
+    }
+    
+    .main-article {
+        padding: 5px;
+        margin: 20px;
+        font-size: 1.5em;
+        background-color: #bebcba;
+        border-top: 15px solid #def449;
+    }
+
+    .side-article {
+        grid-column: 1/13;
+        grid-row: 5/6;
+        font-size: 1.5em;
+        background-color: #bebcba;
+        border-bottom: 5px solid #def449;
+    }
+    
+    footer {
+        font-size: 1.2em;
+    }
+    .about-plus p {
+        display: inline;
+    }
+    
+    /*portfolio page*/
+    .courseGal {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .portCard1 {
+        grid-column: 1/span 2;
+        grid-row: 1/span 1;
+    }
+    .portCard2 {
+        grid-column: 3/span 2;
+        grid-row: 1/span 1;
+    }
+    .portCard3 {
+        grid-column: 1/span 2;
+        grid-row: 2/span 1;
+    }
+    .portCard4 {
+        grid-column: 3/span 2;
+        grid-row: 2/span 1;
+    }
+/*    Contact page*/
+    table {
+        padding: 20px;
+        margin-top: 10px;
+        border: 3px solid black;
+        border-radius: 8px;
+    }
+    .cntcForm {
+        grid-column: 3/ span 8;
+    }
+    form {
+        font-size: 1.5rem;
+    }
+    .cntExtra {
+        font-size: 1.5rem;
+    }
+/*    vid portfolio */
+    .vidcap1 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        padding: 20px 50px 50px 50px;
+    }
+    .vidcap2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        padding: 20px 50px 50px 50px;
+    }
+    .vidcap3 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        padding: 20px 50px 50px 50px;
+    }
+/*    pic portfolio page*/
+    .piccap1 {
+    font-size: 1.5em;
+    padding: 15px;
+    margin-top: 20px;
+    
+}
+    
+/*    web dev portfolio page*/
+    
+}
+
+/*Desktop*/
+@media only screen and (min-width: 60em) {
+/*    60em=960px*/
+    .slogan {
+        grid-column: 2/span 13;
+        grid-row: 2/3;
+        font-size: 2em;
+        border: px solid #def449;
+    }
+    .sloganHome {
+        grid-column: 2/span 13;
+        grid-row: 2/3;
+        font-size: 2em;
+        border: px solid #def449;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    main.self-image {
+        font-size: 2em;
+    }
+
+    .self-image {
+        grid-column: 1/span 6;
+        margin-bottom: 10px;
+        border-bottom: 10px solid #def449;
+    }
+
+    
+    .carousel {
+        width: 60%;
+        grid-column: 5/11;
+        grid-row: 1/2;
+    }
+    .carousel-inner {
+        width: 100%;
+    }
+    .home-article {
+        font-size: 1.7em;
+    }
+    .main-article {
+        grid-column: 7/13;
+        grid-row: 1;
+        padding: 20px;
+        margin: 10px;
+        font-size: 1.5em;
+        background-color: #bebcba;
+        border-top: 15px solid #def449;
+    }
+
+    .side-article {
+        grid-column: 1/span 5;
+        grid-row: 3/4;
+        padding: 20px;
+        margin: 10px;
+        font-size: 1.5em;
+        background-color: #bebcba;
+        /*    border-top: 20px solid #def449;*/
+        border-bottom: 5px solid #def449;
+    }
+
+    .fill-image {
+        grid-column: 7/13;
+        grid-row: 3/4;
+    }
+
+    .info {
+        grid-column: 1/span 13;
+        grid-row: 4/span 1;
+        font-size: 1.5em;
+    }
+
+    .services {
+        grid-column: 1/span 12;
+        grid-row: 5/6;
+        font-size: 1.5em;
+    }
+
+    aside {
+        grid-column: 1/span 13;
+        grid-row: 6/7;
+        height: 80px;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    img.search-logo {
+        display: content;
+    }
+/*    contact page*/
+    .price-li {
+        grid-column: 1/span 6;
+        margin-top: 25px;
+    }
+    table {
+        grid-column: 2/span 6;
+        grid-row: 4/span 4;
+    }
+    .cntExtra {
+        grid-column: 9/span 4;
+        grid-row: 5/span 2;
+    }
+    form {
+        font-size: 1.8rem;
+    }
+    .cntExtra {
+        font-size: 1.8rem;
+    }
+/*vid portfolio page*/
+    .vidList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .vid1 {
+        grid-column: 1/span 2;
+    }
+    .vid1 video {
+        width: 60%;
+    }
+    .vidcap1 {
+        float: right;
+        width: 40%;
+        padding: 20px;
+    }
+    .vid2 {
+        clear: both;
+        grid-column: 1/span 2;
+    }
+    .vid2 video {
+        width: 60%;
+        float: right;
+    }
+    .vidcap2 {
+        width: 40%;
+        padding: 20px;
+    }
+    .vid3 {
+        clear: both;
+        grid-column: 1/span 2;
+        grid-row: auto;
+    }
+    .vid3 video {
+        width: 60%;
+    }
+    .vidcap3 {
+        float: right;
+        width: 40%;
+        padding: 20px;
+    }
+/*    pic portfolio page*/
+    .piccap1 {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+/*    web dev portfolio page*/
+    
+    .ero1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        
+    }
+    #eropic2 {
+        width: 20%;
+    }
+    
+    .erodescript {
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+    .cacau1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .cacaudescript {
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+    .imm1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 20px;
+    }
+    #immpic1,
+    #immpic2,
+    #immpic3,
+    #immpic4,
+    #immpic5 {
+        width: 80%;
+    }
+    .immdescript {
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+/*Wide Desktop*/
+@media only screen and (min-width: 72.5em) {
+/*    72.5em=1160px */
+    header {
+        
+    }
+    .grid2 {
+        grid-template-columns: auto;
+    }
+    .card1 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .card2 {
+        grid-column: 5/7;
+        grid-row: 2/3;
+    }
+    .card3 {
+        grid-column: 8/10;
+        grid-row: 2/3;
+    }
+    .card4 {
+        grid-column: 11/13;
+        grid-row: 2/3;
+    }
+
+    .self-image {
+        grid-column: 2/span 6;
+        margin-bottom: 10px;
+        border-bottom: 10px solid #def449;
+    }
+
+    .main-article {
+        grid-column: 8/12;
+        grid-row: 1;
+        padding: 30px;
+        margin: auto;
+        font-size: 1.5em;
+        background-color: #bebcba;
+        border-top: 15px solid #def449;
+    }
+
+    .side-article {
+        grid-column: 1/span 7;
+        grid-row: 3/4;
+        padding: 30px;
+        margin: 150px;
+        font-size: 1.5em;
+        background-color: #bebcba;
+        border-bottom: 5px solid #def449;
+    }
+/*    contact page*/
+    form {
+        font-size: 1.8rem;
+    }
+    .cntExtra {
+        font-size: 1.8rem;
+    }
+/*    vid portfolio page*/
+    .vid1 {
+        margin-bottom: 50px;
+    }
+    .vid2 {
+        margin-bottom: 50px;
+    }
+    .vid3 {
+        margin-bottom: 50px;
+    }
+}

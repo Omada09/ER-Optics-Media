@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ero Contact Page</title>
+    <!--		Viewport tag-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap core CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--		normailize.css-->
+            <link rel="stylesheet" href="./css/normalize.css">
+    <!--       Reset.css-->
+    <!--        <link rel="stylesheet" href="./css/reset.css">-->
+    <!--		google fonts-->
+    <!--        <link rel="stylesheet" href="font/font-stylesheet.css">-->
+    <!--		personal stylesheet-->
+            <link rel="stylesheet" type="text/css" href="./css/style.css">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div class="headnav">
+                    <header>
+                        <div class="ero-logo">
+                            <a href="index.html"><img class="logo" src="./images/ERO-logo%20copy.png" alt="Logo" width="100" height="100" ><img src="./images/Asset%201.png" alt="optics-logo" width="160" heigt="160"></a>
+                        </div>
+                        <div>
+                            <img class="search-logo" src="./images/search%20copy.svg" alt="search-logo" width="40" height="40" title="Bootstrap">
+                            <img src="./images/person-circle%20copy.svg" alt="login-signup" width="70" height="70" title="Bootstrap">
+                        </div>
+                    </header>
+                    <nav>
+                    <div class="container">
+                        <div class="topnav nav-full" id="myTopnav">
+                          <button class="drpBtn" onclick="respNav()" id="barNav">
+                              <div class="contain" onclick="myFunction(this)">
+                                  <div class="bar1"></div>
+                                  <div class="bar2"></div>
+                                  <div class="bar3"></div>
+                            </div>
+                          </button>
+                        <div class="inner" id="navInner">
+                                  <a href="index.html"><p>Home</p></a>
+                                  <a href="about.html"><p>About</p></a>
+                                  <a href="portfolio.html"><p>Portfolio</p></a>
+                                  <a href="contact.html"><p>Contact</p></a>
+                            </div>
+                            <script>
+                                function myFunction(x) { x.classList.toggle("change");
+                                    
+                                };
+                                var w = document.getElementById("barNav");
+                                var y = document.getElementById("navInner");
+                                w.addEventListener('click', () => {
+                                    y.classList.toggle('show')
+                                });
+                            </script>
+                        </div>
+                        <div id="nav-bar" class="nav-flex">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+                </div>
+       <main>
+            <div class="cntcUs">
+              <h2><b>Contact Us</b></h2>
+          </div>
+            <form method="get" autocomplete="on" class="cntcForm">
+
+                        <div class="fname">
+                            <div class="labl">
+                                <label for="fname">First Name</label>
+                            </div>
+                            <br>
+                            <div class="iput">
+                                <input type="text" id="fname" name="fname" value="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="lname">
+                            <div class="labl">
+                                <label for="lname">Last Name</label>
+                            </div>
+                            <br>
+                            <div class="iput">
+                                <input type="text" id="lname" name="lname" value="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="email">
+                           <div class="labl">
+                               <label for="email">Email</label>
+                           </div>
+                            <br>
+                            <div class="iput">
+                                <input type="text" id="email" name="email" value="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="message">
+                           <div class="labl">
+                            <label for="message">Message</label>
+                           </div>
+                            <br>
+                            <div class="iput">
+                                <textarea id="message" name="message" rows="8"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="submitBox">
+                            <input type="submit" name="submit-button" id="submit" value="SEND" class="submit">
+                        </div>
+                </form>
+        
+            <div class="price-li">
+              <h3><b>Price List</b></h3>
+          </div>
+            <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Photography</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bueno Latte</td>
+                            <td>CAD$14.00</td>
+                        </tr>
+                        <tr>
+                            <td>Pumpkin Cappucino</td>
+                            <td>CAD$1.49</td>
+                        </tr>
+                        <tr>
+                            <td>Chamomile Tea</td>
+                            <td>CAD$12.00</td>
+                        </tr>
+                        <thead>
+                        <tr>
+                            <th scope="col">Videography</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>Strawberry Iced Mocha</td>
+                            <td>CAD$14.00</td>
+                        </tr>
+                        <tr>
+                            <td>Passion Fruit Refresher</td>
+                            <td>CAD$13.15</td>
+                        </tr>
+                        <tr>
+                            <td>2hr-Consultation</td>
+                            <td>CAD$13.15</td>
+                        </tr>
+                        <thead>
+                        <tr>
+                            <th scope="col">Web Design and Development</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>UX Design</td>
+                            <td>CAD$14.00</td>
+                        </tr>
+                        <tr>
+                            <td>Prototyping</td>
+                            <td>CAD$13.15</td>
+                        </tr>
+                        <tr>
+                            <td>1hr-Consultation</td>
+                            <td>CAD$13.15</td>
+                        </tr>
+                    </tbody>
+            </table>
+            <section class="cntExtra">
+                  <article class="appNow">
+                  <h3>Message Us At:</h3>
+                  <h5>Photology911@Gmail.Com.</h5>
+              </article>
+              <br>
+              <article class="profInfo">
+                  <p><strong>Omada Elizabeth Agom</strong><br>
+                  Media Technician, Photographer,<br>613-620-9536.</p>
+              </article>
+              </section>
+       </main>
+       <footer class="footside">
+            <div class="about-plus">
+                <a href="about.html"><p>About</p></a>
+                <a href="portfolio.html"><p>Portfolio</p></a>
+                <a href="contact.html"><p>Contact</p></a>
+                <a href="contact.html"><p>Services</p></a>
+            </div>
+            <div id="copyright">
+                    <p>©OmadaAgom2020</p>
+            </div>
+        </footer>
+    </body>
+</html>

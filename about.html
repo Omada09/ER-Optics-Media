@@ -1,0 +1,134 @@
+<!Doctype html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+        <title>Ero Media</title>
+<!--		Viewport tag-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!--		normailize.css-->
+		<link rel="stylesheet" href="./css/normalize.css">
+<!--
+       Reset.css
+        <link rel="stylesheet" href="./css/reset.css">
+-->
+<!--		personal stylesheet-->
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="headnav">
+                <header>
+                    <div class="ero-logo">
+                        <a href="index.html"><img class="logo" src="./images/ERO-logo%20copy.png" alt="Logo" width="100" height="100" ><img src="./images/Asset%201.png" alt="optics-logo" width="160" heigt="160"></a>
+                    </div>
+                    <div>
+                        <img class="search-logo" src="./images/search%20copy.svg" alt="search-logo" width="40" height="40" title="Bootstrap">
+                        <img src="./images/person-circle%20copy.svg" alt="login-signup" width="70" height="70" title="Bootstrap">
+                    </div>
+                </header>
+                <nav>
+                    <div class="container">
+                        <div class="topnav nav-full" id="myTopnav">
+                          <button class="drpBtn" onclick="respNav()" id="barNav">
+                              <div class="contain" onclick="myFunction(this)">
+                                  <div class="bar1"></div>
+                                  <div class="bar2"></div>
+                                  <div class="bar3"></div>
+                            </div>
+                          </button>
+                        <div class="inner" id="navInner">
+                                  <a href="index.html"><p>Home</p></a>
+                                  <a href="about.html"><p>About</p></a>
+                                  <a href="portfolio.html"><p>Portfolio</p></a>
+                                  <a href="contact.html"><p>Contact</p></a>
+                            </div>
+                            <script>
+                                function myFunction(x) { x.classList.toggle("change");
+                                    
+                                };
+                                var w = document.getElementById("barNav");
+                                var y = document.getElementById("navInner");
+                                w.addEventListener('click', () => {
+                                    y.classList.toggle('show')
+                                });
+                            </script>
+                        </div>
+                        <div id="nav-bar" class="nav-flex">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <main class="main-content grid">
+                <div class="self-image">
+                    <img src="./images/3%20copy.jpg" alt="self-image" width="640" height="">
+                </div>
+                <section class="slogan">
+                    <p><i>"If You See What I Saw"</i></p>
+                </section>
+                <br>
+                <article class="main-article">
+                    <h1>About Me</h1>
+                    <p> <b>HI!</b> I'm Eli, <br> Full name, Omada Elizabeth Agom, A Nigeria, born in the US, raised in Lagos, Nigeria, and currently based in Ottawa, CA. My creative thoughts are seen to be influenced by my journey and experiences through life, from the parliamentary setting of Ottawa, to the Tropical forests of Benue, Nigeria; I currently work as a freelance portrait photographer, also i am currently a post-graduate student, enrolled in an Interactive Media Management program.  </p>
+                </article>
+                <br>
+                <article class="side-article">
+                   <h2>More about me</h2>
+                    <p>With experience of over 5 years+ in photography, i have been able to transition to other art forms, with the hope of helping brands and businesss' who are just starting up, create branding packages that will show the essence of themselves.</p>
+                    </article>
+                <div class="fill-image" >
+                    <img src="./images/8%20copy.jpg" alt="fill-image" width="640" height="">
+                </div>
+                <div class="info">
+                   <h2>Information</h2>
+                    <dl>
+                        <dt><h3>Music</h3></dt>
+                        <dd>Singing, Writing, Reviewing</dd>
+                        <dt><h3>Web</h3></dt>
+                        <dd>Development, Design
+                        <dd>
+                        <dt><h3>Media</h3></dt>
+                        <dd>Photography, Videography, Content Creation</dd>
+                    </dl>
+                </div>
+                <div class="services">
+                    <p>
+                        <label for="Services">Choose a Service:</label>
+                        <select name="Services" id="service">
+                            <option value="photography">Photography</option>
+                            <option value="Content-Creation">Content Creation</option>
+                            <option value="Web-Development">Web Development</option>
+                            <option value="Videography">Videography</option>
+                        </select>
+                    </p>
+
+                </div>
+                <aside class="socialsAbout">
+                    <div>
+                        <p>
+                        <a href="https://www.eroptics.ca/">Instagram</a>
+                        <a href="https://twitter.com/home">Twitter</a>
+                        <a href="mailto: Agom0001@algonquinlive.com">Email Me</a></p>
+                    </div>
+                </aside>
+           </main>
+            <footer class="footside">
+            <div class="about-plus">
+                <a href="about.html"><p>About</p></a>
+                <a href="portfolio.html"><p>Portfolio</p></a>
+                <a href="contact.html"><p>Contact</p></a>
+                <a href="contact.html"><p>Services</p></a>
+            </div>
+            <div id="copyright">
+                    <p>©OmadaAgom2020</p>
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>

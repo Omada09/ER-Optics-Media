@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Ero Web Development Page</title>
+    <!--		Viewport tag-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap core CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!--		normailize.css-->
+		<link rel="stylesheet" href="./css/normalize.css">
+<!--       Reset.css-->
+<!--        <link rel="stylesheet" href="./css/reset.css">-->
+<!--		google fonts-->
+        <link rel="stylesheet" href="font/font-stylesheet.css">
+<!--		personal stylesheet-->
+       <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        
+        
+</head>
+    <body>
+        <div class="headnav">
+            <header>
+                <div class="ero-logo">
+                    <a href="index.html"><img class="logo" src="./images/ERO-logo%20copy.png" alt="Logo" width="100" height="100" ><img src="./images/Asset%201.png" alt="optics-logo" width="160" heigt="160"></a>
+                </div>
+                <div>
+                    <img class="search-logo" src="./images/search%20copy.svg" alt="search-logo" width="40" height="40" title="Bootstrap">
+                    <img src="./images/person-circle%20copy.svg" alt="login-signup" width="70" height="70" title="Bootstrap">
+                </div>
+            </header>
+            <nav>
+                    <div class="container">
+                        <div class="topnav nav-full" id="myTopnav">
+                          <button class="drpBtn" onclick="respNav()" id="barNav">
+                              <div class="contain" onclick="myFunction(this)">
+                                  <div class="bar1"></div>
+                                  <div class="bar2"></div>
+                                  <div class="bar3"></div>
+                            </div>
+                          </button>
+                        <div class="inner" id="navInner">
+                                  <a href="index.html"><p>Home</p></a>
+                                  <a href="about.html"><p>About</p></a>
+                                  <a href="portfolio.html"><p>Portfolio</p></a>
+                                  <a href="contact.html"><p>Contact</p></a>
+                            </div>
+                            <script>
+                                function myFunction(x) { x.classList.toggle("change");
+                                    
+                                };
+                                var w = document.getElementById("barNav");
+                                var y = document.getElementById("navInner");
+                                w.addEventListener('click', () => {
+                                    y.classList.toggle('show')
+                                });
+                            </script>
+                        </div>
+                        <div id="nav-bar" class="nav-flex">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+        </div>
+        <main>
+            <div class="webDevH">
+                  <h2><b>Web Development</b></h2>
+              </div>
+                <section class="sect1">
+                   <div class="ero1">
+                       <img src="./images/ero-desktop-prototype.jpg" id="eropic1">
+                       <img src="./images/ero-mobile-protype.jpg" id="eropic2">
+                   </div>
+                   <div class="erodescript">
+                       <h3>ER Optics</h3>
+                        <p>The making of this website is was done in stages, with the finalized prototype looking like this; the final product is the website you see today, with great attention to UX elements.<br> On the Left hand, we see the mobile view, and on the left is what the desktop view was meant to depict.
+                    </p>
+                   </div>
+                </section>
+                <section class="sect2">
+                   <div class="cacau1">
+                       <img src="./images/cacau-mobile-protype.jpg">
+                       <img src="./images/cacau-desktop-prototype.jpg">
+                   </div>
+                   <div class="cacaudescript">
+                       <h3>Cacau Brew</h3>
+                        <p>This website was one of the first i got to work on, in the early stages of my journey into coding, and it was constructed from the initial stages of logo design, to the building of the brand "Cacau Brew", and all it stands for. I went as far as building a whole back ground story for this purpose; which is seen and felt in the interface.<br>On the left we have the mobile view, while on the right, we have the desktop view.</p>
+                   </div>
+                </section>
+                <section class="sect3">
+                   <div class="imm1">
+                       <img src="./images/prototypefinale.jpg" id="immpic1" class="immpic">
+                       <img src="./images/prototypeabout.jpg" id="immpic2" class="immpic">
+                       <img src="./images/prototypestaff.jpg" id="immpic3" class="immpic">
+                       <img src="./images/prototypeportfolio.jpg" id="immpic4" class="immpic">
+                       <img src="./images/prototypecontact.jpg" id="immpic5" class="immpic">
+                   </div>
+                   <div class="immdescript">
+                       <h3> Interactive Media Management</h3>
+                        <p>I was fortunate to be hired by the departmemnt of Media and Design at Algonquin College, specifically the Interactive Media Management program, during the course of my study at the same school.<br> I worked with a team called AtomCo., as a web developer and UX designer, and our deliverables were a website for the program, along with some supporting material like an ebrochure, posters and banners. </p>
+                   </div>
+                </section>
+        </main>
+        <footer class="footside">
+            <div class="about-plus">
+                <a href="about.html"><p>About</p></a>
+                <a href="portfolio.html"><p>Portfolio</p></a>
+                <a href="contact.html"><p>Contact</p></a>
+                <a href="contact.html"><p>Services</p></a>
+            </div>
+            <div id="copyright">
+                    <p>©OmadaAgom2020</p>
+            </div>
+        </footer>
+	</body>
+</html>

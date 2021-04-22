@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Ero Portfolio Page</title>
+    <!--		Viewport tag-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap core CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!--		normailize.css-->
+		<link rel="stylesheet" href="./css/normalize.css">
+<!--       Reset.css-->
+<!--        <link rel="stylesheet" href="./css/reset.css">-->
+<!--		google fonts-->
+        <link rel="stylesheet" href="font/font-stylesheet.css">
+<!--		personal stylesheet-->
+       <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        
+        
+</head>
+    <body>
+        <div class="headnav">
+            <header>
+                <div class="ero-logo">
+                    <a href="index.html"><img class="logo" src="./images/ERO-logo%20copy.png" alt="Logo" width="100" height="100" ><img src="./images/Asset%201.png" alt="optics-logo" width="160" heigt="160"></a>
+                </div>
+                <div>
+                    <img class="search-logo" src="./images/search%20copy.svg" alt="search-logo" width="40" height="40" title="Bootstrap">
+                    <img src="./images/person-circle%20copy.svg" alt="login-signup" width="70" height="70" title="Bootstrap">
+                </div>
+            </header>
+            <nav>
+                    <div class="container">
+                        <div class="topnav nav-full" id="myTopnav">
+                          <button class="drpBtn" onclick="respNav()" id="barNav">
+                              <div class="contain" onclick="myFunction(this)">
+                                  <div class="bar1"></div>
+                                  <div class="bar2"></div>
+                                  <div class="bar3"></div>
+                            </div>
+                          </button>
+                        <div class="inner" id="navInner">
+                                  <a href="index.html"><p>Home</p></a>
+                                  <a href="about.html"><p>About</p></a>
+                                  <a href="portfolio.html"><p>Portfolio</p></a>
+                                  <a href="contact.html"><p>Contact</p></a>
+                            </div>
+                            <script>
+                                function myFunction(x) { x.classList.toggle("change");
+                                    
+                                };
+                                var w = document.getElementById("barNav");
+                                var y = document.getElementById("navInner");
+                                w.addEventListener('click', () => {
+                                    y.classList.toggle('show')
+                                });
+                            </script>
+                        </div>
+                        <div id="nav-bar" class="nav-flex">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+        </div>
+        <main>
+            <div class="portfo">
+                  <h2><b>Portfolio</b></h2>
+              </div>
+            <div class='gallery'>
+                  <section class="courseGal">
+                        <div class="portCard portCard1" style="width: 20rem;">
+                            <a href="pictures.html"><img src="./images/picvector.jpg" alt="#"></a>
+                            <div class="card-body">
+                                <p class="card-text">Photography.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="portCard portCard2" style="width: 20rem;">
+                            <a href="video.html"><img src="./images/vidvector.jpg" alt="#"></a>
+                            <div class="card-body">
+                                <p class="card-text">Videography.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="portCard portCard3" style="width: 20rem;">
+                            <a href="webdev.html"><img src="./images/webvector.jpg" alt="#"></a>
+                            <div class="card-body">
+                                <p class="card-text">Web Design and Development.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="portCard portCard4" style="width: 20rem; ">
+                            <a href="webdev.html"><img src="./images/uxvector.jpg" alt="#" width="100%" height="10%"></a>
+                            <div class="card-body">
+                                <p class="card-text">UX Design.</p>
+                            </div>
+                        </div>
+                  </section>
+            </div>
+        </main>
+        <footer class="footside">
+            <div class="about-plus">
+                <a href="about.html"><p>About</p></a>
+                <a href="portfolio.html"><p>Portfolio</p></a>
+                <a href="contact.html"><p>Contact</p></a>
+                <a href="contact.html"><p>Services</p></a>
+            </div>
+            <div id="copyright">
+                    <p>©OmadaAgom2020</p>
+            </div>
+        </footer>
+	</body>
+</html>

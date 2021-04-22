@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Ero Picture Page</title>
+    <!--		Viewport tag-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap core CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!--		normailize.css-->
+		<link rel="stylesheet" href="./css/normalize.css">
+<!--       Reset.css-->
+<!--        <link rel="stylesheet" href="./css/reset.css">-->
+<!--		google fonts-->
+        <link rel="stylesheet" href="font/font-stylesheet.css">
+<!--		personal stylesheet-->
+       <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        
+        
+</head>
+    <body>
+        <div class="headnav">
+            <header>
+                <div class="ero-logo">
+                    <a href="index.html"><img class="logo" src="./images/ERO-logo%20copy.png" alt="Logo" width="100" height="100" ><img src="./images/Asset%201.png" alt="optics-logo" width="160" heigt="160"></a>
+                </div>
+                <div>
+                    <img class="search-logo" src="./images/search%20copy.svg" alt="search-logo" width="40" height="40" title="Bootstrap">
+                    <img src="./images/person-circle%20copy.svg" alt="login-signup" width="70" height="70" title="Bootstrap">
+                </div>
+            </header>
+            <nav>
+                    <div class="container">
+                        <div class="topnav nav-full" id="myTopnav">
+                          <button class="drpBtn" onclick="respNav()" id="barNav">
+                              <div class="contain" onclick="myFunction(this)">
+                                  <div class="bar1"></div>
+                                  <div class="bar2"></div>
+                                  <div class="bar3"></div>
+                            </div>
+                          </button>
+                        <div class="inner" id="navInner">
+                                  <a href="index.html"><p>Home</p></a>
+                                  <a href="about.html"><p>About</p></a>
+                                  <a href="portfolio.html"><p>Portfolio</p></a>
+                                  <a href="contact.html"><p>Contact</p></a>
+                            </div>
+                            <script>
+                                function myFunction(x) { x.classList.toggle("change");
+                                    
+                                };
+                                var w = document.getElementById("barNav");
+                                var y = document.getElementById("navInner");
+                                w.addEventListener('click', () => {
+                                    y.classList.toggle('show')
+                                });
+                            </script>
+                        </div>
+                        <div id="nav-bar" class="nav-flex">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+        </div>
+        <div class="photoH">
+                  <h2><b>Photography</b></h2>
+              </div>
+        <main>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/eni1.jpg" class="d-block w-100" alt="Portraiture" width="1048" height="1048">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/eni2.jpg" class="d-block w-100" alt="..." width="1048" height="1048">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/eni3.jpg" class="d-block w-100" alt="..." width="1048" height="1048">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/eni4.jpg" class="d-block w-100" alt="..." width="1048" height="1048">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                    
+                </div>
+                <section class="piccap1">
+                        <p><i>A shoot of a friend turned *MUSE*.</i><br><br><b>Date:</b> Jun 10, 2018.<br><b>Title:</b> Lens On Eni.<br><b>Job Title:</b> Photographer/ makeup-artist Hardware/Software: Canon EOS 60D/Photoshop.<br> <b>Brief Description:</b> A nice summer afternoon with a friend as muse; she allowed me apply make-up on her for a nice afternoon shoot using natural light as the source of light.</p>
+                    </section>
+        </main>
+        <footer class="footside">
+            <div class="about-plus">
+                <a href="about.html"><p>About</p></a>
+                <a href="portfolio.html"><p>Portfolio</p></a>
+                <a href="contact.html"><p>Contact</p></a>
+                <a href="contact.html"><p>Services</p></a>
+            </div>
+            <div id="copyright">
+                    <p>©OmadaAgom2020</p>
+            </div>
+        </footer>
+	</body>
+</html>
